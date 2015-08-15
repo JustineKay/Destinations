@@ -465,6 +465,25 @@
     
 }
 
+-(void)addValue: (NSNumber *)answerValue to: (NSNumber *)destinationValue withKey: (NSString *)destinationName{
+    
+    answerValue = @(1);
+    
+    destinationValue = [[DestinationsModel sharedModel].destinationValues objectForKey:destinationName];
+    
+    NSNumber *currentDestinationValue = destinationValue;
+    
+    NSInteger currentDestinationValueAsAnInteger = [currentDestinationValue integerValue];
+    
+    currentDestinationValueAsAnInteger += [answerValue integerValue];
+    
+    NSNumber *newValueForDestination = @(currentDestinationValueAsAnInteger);
+    
+    [[DestinationsModel sharedModel].destinationValues setValue:newValueForDestination forKey:destinationName];
+    
+    
+}
+
 - (IBAction)selectedDone:(UIBarButtonItem *)sender {
     
     for (int i = 0 ; i < self.selectedButtons.count; i++) {
@@ -475,16 +494,19 @@
             
             
             // change dictionary value for Hokkaido
-            NSNumber *valueForAnswer1a = @(1);
             
-            NSNumber *currentValueForHokkaido = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"] withKey:@"Hokkaido"];
             
-            NSInteger currentValueAsAnInteger = [currentValueForHokkaido integerValue];
-            currentValueAsAnInteger += [valueForAnswer1a integerValue];
-            
-            NSNumber *newValueForHokkaido = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForHokkaido forKey:@"Hokkaido"];
+//            NSNumber *valueForAnswer1a = @(1);
+//            
+//            NSNumber *currentValueForHokkaido = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"];
+//            
+//            NSInteger currentValueAsAnInteger = [currentValueForHokkaido integerValue];
+//            currentValueAsAnInteger += [valueForAnswer1a integerValue];
+//            
+//            NSNumber *newValueForHokkaido = @(currentValueAsAnInteger);
+//            
+//            [[DestinationsModel sharedModel].destinationValues setValue:newValueForHokkaido forKey:@"Hokkaido"];
         }
         
         
@@ -602,6 +624,8 @@
             NSNumber *newValueForHokkaido = @(currentValueAsAnInteger);
             
             [[DestinationsModel sharedModel].destinationValues setValue:newValueForHokkaido forKey:@"Hokkaido"];
+            
+            [DestinationsModel sharedModel].hokkaido.values = 0;
             
             
             // change dictionary value for Bali
