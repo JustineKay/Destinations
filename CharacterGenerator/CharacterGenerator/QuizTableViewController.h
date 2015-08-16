@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+
 @class IntroListTableViewController;
 
 @interface QuizTableViewController : UITableViewController
 
 @property (nonatomic) IntroListTableViewController *introListTableViewController;
+
+-(void)setBackgroundAndTitleColorForSelectedAnswer: (UIButton *)selectedAnswer ;
+
+-(void)setBackgroundAndTitleColorForDeselectedAnswer: (UIButton *)deselectedAnswer;
 
 @end

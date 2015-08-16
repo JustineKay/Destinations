@@ -60,25 +60,84 @@
                                                           @"Monaco"      : @(0)
                                                           }.mutableCopy;
     
+    self.answer1a.layer.cornerRadius = 10;
+    self.answer1a.clipsToBounds = YES;
+    self.answer1b.layer.cornerRadius = 10;
+    self.answer1b.clipsToBounds = YES;
+    self.answer1c.layer.cornerRadius = 10;
+    self.answer1c.clipsToBounds = YES;
+    self.answer1d.layer.cornerRadius = 10;
+    self.answer1d.clipsToBounds = YES;
+    self.answer2a.layer.cornerRadius = 10;
+    self.answer2a.clipsToBounds = YES;
+    self.answer2b.layer.cornerRadius = 10;
+    self.answer2b.clipsToBounds = YES;
+    self.answer3a.layer.cornerRadius = 10;
+    self.answer3a.clipsToBounds = YES;
+    self.answer3b.layer.cornerRadius = 10;
+    self.answer3b.clipsToBounds = YES;
+    self.answer4a.layer.cornerRadius = 10;
+    self.answer4a.clipsToBounds = YES;
+    self.answer4b.layer.cornerRadius = 10;
+    self.answer4b.clipsToBounds = YES;
+    self.answer4c.layer.cornerRadius = 10;
+    self.answer4c.clipsToBounds = YES;
+    self.answer4d.layer.cornerRadius = 10;
+    self.answer4d.clipsToBounds = YES;
+    self.answer4e.layer.cornerRadius = 10;
+    self.answer4e.clipsToBounds = YES;
+    self.answer5a.layer.cornerRadius = 10;
+    self.answer5a.clipsToBounds = YES;
+    self.answer5b.layer.cornerRadius = 10;
+    self.answer5b.clipsToBounds = YES;
+    self.answer5c.layer.cornerRadius = 10;
+    self.answer5c.clipsToBounds = YES;
+    self.answer5d.layer.cornerRadius = 10;
+    self.answer5d.clipsToBounds = YES;
+    self.answer5e.layer.cornerRadius = 10;
+    self.answer5e.clipsToBounds = YES;
+
+    
+    
 }
+
+-(void)setBackgroundAndTitleColorForSelectedAnswer: (UIButton *)selectedAnswer {
+    
+    [selectedAnswer setBackgroundColor:[UIColor orangeColor]];
+    [selectedAnswer setTitleColor:[UIColor whiteColor] forState:normal];
+    
+}
+
+-(void)setBackgroundAndTitleColorForDeselectedAnswer: (UIButton *)deselectedAnswer {
+    
+    [deselectedAnswer setBackgroundColor:[UIColor whiteColor]];
+    [deselectedAnswer setTitleColor:[UIColor orangeColor] forState:normal];
+    
+}
+
 
 - (IBAction)selectedAnswer1a:(UIButton *)sender {
     
     [self.selectedButtons insertObject:self.answer1a atIndex:0];
     
-    [self.answer1a setBackgroundColor:[UIColor orangeColor]];
-    [self.answer1a setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer1a.layer.cornerRadius = 10;
-    self.answer1a.clipsToBounds = YES;
+    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer1a];
+    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1b];
+    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1c];
+    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1d];
     
-    [self.answer1b setBackgroundColor:[UIColor whiteColor]];
-    [self.answer1b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+
     
-    [self.answer1c setBackgroundColor:[UIColor whiteColor]];
-    [self.answer1c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
-    
-    [self.answer1d setBackgroundColor:[UIColor whiteColor]];
-    [self.answer1d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+//    [self.answer1a setBackgroundColor:[UIColor orangeColor]];
+//    [self.answer1a setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    
+//    [self.answer1b setBackgroundColor:[UIColor whiteColor]];
+//    [self.answer1b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+//    
+//    [self.answer1c setBackgroundColor:[UIColor whiteColor]];
+//    [self.answer1c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
+//    
+//    [self.answer1d setBackgroundColor:[UIColor whiteColor]];
+//    [self.answer1d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     
 }
 
@@ -93,8 +152,6 @@
     
     [self.answer1b setBackgroundColor:[UIColor orangeColor]];
     [self.answer1b setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer1b.layer.cornerRadius = 10;
-    self.answer1b.clipsToBounds = YES;
     
     [self.answer1c setBackgroundColor:[UIColor whiteColor]];
     [self.answer1c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
@@ -119,8 +176,6 @@
     
     [self.answer1c setBackgroundColor:[UIColor orangeColor]];
     [self.answer1c setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer1c.layer.cornerRadius = 10;
-    self.answer1c.clipsToBounds = YES;
     
     [self.answer1d setBackgroundColor:[UIColor whiteColor]];
     [self.answer1d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
@@ -144,8 +199,7 @@
     
     [self.answer1d setBackgroundColor:[UIColor orangeColor]];
     [self.answer1d setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer1d.layer.cornerRadius = 10;
-    self.answer1d.clipsToBounds = YES;
+    
 }
 
 
@@ -157,8 +211,6 @@
     
     [self.answer2a setBackgroundColor:[UIColor orangeColor]];
     [self.answer2a setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer2a.layer.cornerRadius = 10;
-    self.answer2a.clipsToBounds = YES;
     
     [self.answer2b setBackgroundColor:[UIColor whiteColor]];
     [self.answer2b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
@@ -177,8 +229,7 @@
     
     [self.answer2b setBackgroundColor:[UIColor orangeColor]];
     [self.answer2b setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer2b.layer.cornerRadius = 10;
-    self.answer2b.clipsToBounds = YES;
+    
     
     
 }
@@ -190,8 +241,6 @@
     
     [self.answer3a setBackgroundColor:[UIColor orangeColor]];
     [self.answer3a setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer3a.layer.cornerRadius = 10;
-    self.answer3a.clipsToBounds = YES;
     
     [self.answer3b setBackgroundColor:[UIColor whiteColor]];
     [self.answer3b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
@@ -208,8 +257,6 @@
     
     [self.answer3b setBackgroundColor:[UIColor orangeColor]];
     [self.answer3b setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer3b.layer.cornerRadius = 10;
-    self.answer3b.clipsToBounds = YES;
     
     
 }
@@ -221,8 +268,6 @@
     
     [self.answer4a setBackgroundColor:[UIColor orangeColor]];
     [self.answer4a setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer4a.layer.cornerRadius = 10;
-    self.answer4a.clipsToBounds = YES;
     
     [self.answer4b setBackgroundColor:[UIColor whiteColor]];
     [self.answer4b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
@@ -247,8 +292,6 @@
     
     [self.answer4b setBackgroundColor:[UIColor orangeColor]];
     [self.answer4b setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer4b.layer.cornerRadius = 10;
-    self.answer4b.clipsToBounds = YES;
     
     [self.answer4c setBackgroundColor:[UIColor whiteColor]];
     [self.answer4c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
@@ -274,8 +317,6 @@
     
     [self.answer4c setBackgroundColor:[UIColor orangeColor]];
     [self.answer4c setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer4c.layer.cornerRadius = 10;
-    self.answer4c.clipsToBounds = YES;
     
     [self.answer4d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [self.answer4d setBackgroundColor:[UIColor whiteColor]];
@@ -302,8 +343,6 @@
     
     [self.answer4d setBackgroundColor:[UIColor orangeColor]];
     [self.answer4d setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer4d.layer.cornerRadius = 10;
-    self.answer4d.clipsToBounds = YES;
     
     [self.answer4e setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
     [self.answer4e setBackgroundColor:[UIColor whiteColor]];
@@ -331,8 +370,6 @@
     
     [self.answer4e setBackgroundColor:[UIColor orangeColor]];
     [self.answer4e setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer4e.layer.cornerRadius = 10;
-    self.answer4e.clipsToBounds = YES;
     
 }
 
@@ -344,8 +381,6 @@
     
     [self.answer5a setBackgroundColor:[UIColor orangeColor]];
     [self.answer5a setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer5a.layer.cornerRadius = 10;
-    self.answer5a.clipsToBounds = YES;
     
     [self.answer5b setBackgroundColor:[UIColor whiteColor]];
     [self.answer5b setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
@@ -374,8 +409,6 @@
     
     [self.answer5b setBackgroundColor:[UIColor orangeColor]];
     [self.answer5b setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer5b.layer.cornerRadius = 10;
-    self.answer5b.clipsToBounds = YES;
     
     [self.answer5c setBackgroundColor:[UIColor whiteColor]];
     [self.answer5c setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
@@ -402,8 +435,6 @@
     
     [self.answer5c setBackgroundColor:[UIColor orangeColor]];
     [self.answer5c setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer5c.layer.cornerRadius = 10;
-    self.answer5c.clipsToBounds = YES;
     
     [self.answer5d setBackgroundColor:[UIColor whiteColor]];
     [self.answer5d setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
@@ -430,8 +461,6 @@
     
     [self.answer5d setBackgroundColor:[UIColor orangeColor]];
     [self.answer5d setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer5d.layer.cornerRadius = 10;
-    self.answer5d.clipsToBounds = YES;
     
     [self.answer5e setBackgroundColor:[UIColor whiteColor]];
     [self.answer5e setTitleColor:[UIColor orangeColor] forState:UIControlStateNormal];
@@ -460,8 +489,6 @@
     
     [self.answer5e setBackgroundColor:[UIColor orangeColor]];
     [self.answer5e setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.answer5e.layer.cornerRadius = 10;
-    self.answer5e.clipsToBounds = YES;
     
 }
 
