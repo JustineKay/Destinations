@@ -467,11 +467,7 @@
 
 -(void)addValue: (NSNumber *)answerValue to: (NSNumber *)destinationValue withKey: (NSString *)destinationName{
     
-    answerValue = @(1);
-    
-    destinationValue = [[DestinationsModel sharedModel].destinationValues objectForKey:destinationName];
-    
-    NSNumber *currentDestinationValue = destinationValue;
+    NSNumber *currentDestinationValue = [[DestinationsModel sharedModel].destinationValues objectForKey:destinationName];
     
     NSInteger currentDestinationValueAsAnInteger = [currentDestinationValue integerValue];
     
