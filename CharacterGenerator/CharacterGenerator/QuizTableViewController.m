@@ -67,45 +67,18 @@
                                                           @"Monaco"      : @(0)
                                                           }.mutableCopy;
     
-//    self.answer1Buttons.layer.cornerRadius = 10;
-//    self.answer1Buttons.clipsToBounds = YES;
-//    self.answer1b.layer.cornerRadius = 10;
-//    self.answer1b.clipsToBounds = YES;
-//    self.answer1c.layer.cornerRadius = 10;
-//    self.answer1c.clipsToBounds = YES;
-//    self.answer1d.layer.cornerRadius = 10;
-//    self.answer1d.clipsToBounds = YES;
-//    self.answer2a.layer.cornerRadius = 10;
-//    self.answer2a.clipsToBounds = YES;
-//    self.answer2b.layer.cornerRadius = 10;
-//    self.answer2b.clipsToBounds = YES;
-//    self.answer3a.layer.cornerRadius = 10;
-//    self.answer3a.clipsToBounds = YES;
-//    self.answer3b.layer.cornerRadius = 10;
-//    self.answer3b.clipsToBounds = YES;
-//    self.answer4a.layer.cornerRadius = 10;
-//    self.answer4a.clipsToBounds = YES;
-//    self.answer4b.layer.cornerRadius = 10;
-//    self.answer4b.clipsToBounds = YES;
-//    self.answer4c.layer.cornerRadius = 10;
-//    self.answer4c.clipsToBounds = YES;
-//    self.answer4d.layer.cornerRadius = 10;
-//    self.answer4d.clipsToBounds = YES;
-//    self.answer4e.layer.cornerRadius = 10;
-//    self.answer4e.clipsToBounds = YES;
-//    self.answer5a.layer.cornerRadius = 10;
-//    self.answer5a.clipsToBounds = YES;
-//    self.answer5b.layer.cornerRadius = 10;
-//    self.answer5b.clipsToBounds = YES;
-//    self.answer5c.layer.cornerRadius = 10;
-//    self.answer5c.clipsToBounds = YES;
-//    self.answer5d.layer.cornerRadius = 10;
-//    self.answer5d.clipsToBounds = YES;
-//    self.answer5e.layer.cornerRadius = 10;
-//    self.answer5e.clipsToBounds = YES;
+    [self setupButtonUI];
+}
 
+- (void)setupButtonUI {
+    NSArray *allButtons = @[self.answer1Buttons, self.answer2Buttons, self.answer3Buttons, self.answer4Buttons, self.answer5Buttons];
     
-    
+    for (NSArray *buttons in allButtons) {
+        for (UIButton *button in buttons) {
+            button.layer.cornerRadius = 10.0;
+            button.clipsToBounds = YES;
+        }
+    }
 }
 
 -(void)setBackgroundAndTitleColorForSelectedAnswer: (UIButton *)selectedAnswer {
@@ -184,16 +157,6 @@
     NSNumber *newDestinationValue = @(currentDestinationValueAsInteger);
     
     destination.values = newDestinationValue;
-    
-//    NSNumber *currentDestinationValue = [[DestinationsModel sharedModel].destinationValues objectForKey:destinationName];
-//    
-//    NSInteger currentDestinationValueAsAnInteger = [currentDestinationValue integerValue];
-//    
-//    currentDestinationValueAsAnInteger += [answerValue integerValue];
-//    
-//    NSNumber *newValueForDestination = @(currentDestinationValueAsAnInteger);
-//    
-//    [[DestinationsModel sharedModel].destinationValues setValue:newValueForDestination forKey:destinationName];
     
     
 }
@@ -409,13 +372,13 @@
     NSNumber *highestValue = 0;
     NSString *userCity;
     
-    for (Destination *destination in [DestinationsModel sharedModel].allDestinations) {
+    for (Destination *destination in [[DestinationsModel sharedModel] allDestinations]) {
         if (destination.values > highestValue) {
             highestValue = destination.values;
             userCity = destination.name;
         }
     }
-//    
+////
 //    for (int i = 0; i < keys.count; i++) {
 //        NSString *key = keys[i];
 //        if ([[DestinationsModel sharedModel].destinationValues objectForKey:key] > highestValue){
