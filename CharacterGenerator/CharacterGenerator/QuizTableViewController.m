@@ -497,16 +497,6 @@
             
             [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"] withKey:@"Hokkaido"];
             
-//            NSNumber *valueForAnswer1a = @(1);
-//            
-//            NSNumber *currentValueForHokkaido = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"];
-//            
-//            NSInteger currentValueAsAnInteger = [currentValueForHokkaido integerValue];
-//            currentValueAsAnInteger += [valueForAnswer1a integerValue];
-//            
-//            NSNumber *newValueForHokkaido = @(currentValueAsAnInteger);
-//            
-//            [[DestinationsModel sharedModel].destinationValues setValue:newValueForHokkaido forKey:@"Hokkaido"];
         }
         
         
@@ -515,28 +505,12 @@
             
             // change dictionary value for Aspen
             
-            NSNumber *valueForAnswer1b = @(1);
-            
-            NSNumber *currentValueForAspen = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForAspen integerValue];
-            currentValueAsAnInteger += [valueForAnswer1b integerValue];
-            
-            NSNumber *newValueForAspen = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForAspen forKey:@"Aspen"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"] withKey:@"Aspen"];
             
             
             // change dictionary value for Fox Glacier
             
-            NSNumber *currentValueForFoxGlacier = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"];
-            
-            NSInteger currentFoxGlacierValueAsAnInteger = [currentValueForFoxGlacier integerValue];
-            currentFoxGlacierValueAsAnInteger += [valueForAnswer1b integerValue];
-            
-            NSNumber *newValueForFoxGlacier = @(currentFoxGlacierValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForFoxGlacier forKey:@"Fox Glacier"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"] withKey:@"Fox Glacier"];
             
         }
         
@@ -546,16 +520,7 @@
             
             //change dictionary value for Bali
             
-            NSNumber *valueForAnswer1c = @(1);
-            
-            NSNumber *currentValueForBali = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForBali integerValue];
-            currentValueAsAnInteger += [valueForAnswer1c integerValue];
-            
-            NSNumber *newValueForBali = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForBali forKey:@"Bali"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"] withKey:@"Bali"];
             
         }
         
@@ -565,16 +530,7 @@
             
             //change dictionary value for Monaco
             
-            NSNumber *valueForAnswer1d = @(1);
-            
-            NSNumber *currentValueForMonaco = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForMonaco integerValue];
-            currentValueAsAnInteger += [valueForAnswer1d integerValue];
-            
-            NSNumber *newValueForMonaco = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForMonaco forKey:@"Monaco"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"] withKey:@"Monaco"];
             
         }
         
@@ -584,28 +540,12 @@
             
             // change dictionary value for Aspen
             
-            NSNumber *valueForAnswer2a = @(1);
-            
-            NSNumber *currentValueForAspen = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForAspen integerValue];
-            currentValueAsAnInteger += [valueForAnswer2a integerValue];
-            
-            NSNumber *newValueForAspen = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForAspen forKey:@"Aspen"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"] withKey:@"Aspen"];
             
             
             // change dictionary value for Monaco
             
-            NSNumber *currentValueForMonaco = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"];
-            
-            NSInteger currentMonacoValueAsAnInteger = [currentValueForMonaco integerValue];
-            currentMonacoValueAsAnInteger += [valueForAnswer2a integerValue];
-            
-            NSNumber *newValueForMonaco = @(currentMonacoValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForMonaco forKey:@"Monaco"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"] withKey:@"Monaco"];
         }
         
         
@@ -614,42 +554,17 @@
             
             // change dictionary value for Hokkaido
             
-            NSNumber *valueForAnswer2b = @(1);
-            
-            NSNumber *currentValueForHokkaido = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForHokkaido integerValue];
-            currentValueAsAnInteger += [valueForAnswer2b integerValue];
-            
-            NSNumber *newValueForHokkaido = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForHokkaido forKey:@"Hokkaido"];
-            
-            [DestinationsModel sharedModel].hokkaido.values = 0;
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"] withKey:@"Hokkaido"];
             
             
             // change dictionary value for Bali
             
-            NSNumber *currentValueForBali = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"];
-            
-            NSInteger currentBaliValueAsAnInteger = [currentValueForBali integerValue];
-            currentBaliValueAsAnInteger += [valueForAnswer2b integerValue];
-            
-            NSNumber *newValueForBali = @(currentBaliValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForBali forKey:@"Bali"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"] withKey:@"Bali"];
             
             
             // change dictionary value for Fox Glacier
             
-            NSNumber *currentValueForFoxGlacier = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"];
-            
-            NSInteger currentFoxGlacierValueAsAnInteger = [currentValueForFoxGlacier integerValue];
-            currentFoxGlacierValueAsAnInteger += [valueForAnswer2b integerValue];
-            
-            NSNumber *newValueForFoxGlacier = @(currentFoxGlacierValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForFoxGlacier forKey:@"Fox Glacier"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"] withKey:@"Fox Glacier"];
             
         }
         
@@ -659,52 +574,22 @@
             
             // change dictionary value for Hokkaido
             
-            NSNumber *valueForAnswer3a = @(1);
-            
-            NSNumber *currentValueForHokkaido = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForHokkaido integerValue];
-            currentValueAsAnInteger += [valueForAnswer3a integerValue];
-            
-            NSNumber *newValueForHokkaido = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForHokkaido forKey:@"Hokkaido"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"] withKey:@"Hokkaido"];
             
             
             // change dictionary value for Bali
             
-            NSNumber *currentValueForBali = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"];
-            
-            NSInteger currentBaliValueAsAnInteger = [currentValueForBali integerValue];
-            currentBaliValueAsAnInteger += [valueForAnswer3a integerValue];
-            
-            NSNumber *newValueForBali = @(currentBaliValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForBali forKey:@"Bali"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"] withKey:@"Bali"];
             
             
             // change dictionary value for Aspen
             
-            NSNumber *currentValueForAspen = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"];
-            
-            NSInteger currentAspenValueAsAnInteger = [currentValueForAspen integerValue];
-            currentAspenValueAsAnInteger += [valueForAnswer3a integerValue];
-            
-            NSNumber *newValueForAspen = @(currentAspenValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForAspen forKey:@"Bali"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"] withKey:@"Aspen"];
             
             
             // change dictionary value for Fox Glacier
             
-            NSNumber *currentValueForFoxGlacier = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"];
-            
-            NSInteger currentFoxGlacierValueAsAnInteger = [currentValueForFoxGlacier integerValue];
-            currentFoxGlacierValueAsAnInteger += [valueForAnswer3a integerValue];
-            
-            NSNumber *newValueForFoxGlacier = @(currentFoxGlacierValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForFoxGlacier forKey:@"Fox Glacier"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"] withKey:@"Fox Glacier"];
             
         }
         
@@ -712,32 +597,15 @@
             
             //change dictionary value for Monaco
             
-            NSNumber *valueForAnswer3b = @(1);
-            
-            NSNumber *currentValueForMonaco = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForMonaco integerValue];
-            currentValueAsAnInteger += [valueForAnswer3b integerValue];
-            
-            NSNumber *newValueForMonaco = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForMonaco forKey:@"Monaco"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"] withKey:@"Monaco"];
             
         }
         
         if (selectedButtonAtCurrentIndex == self.answer4a) {
             
             // change dictionary value for Hokkaido
-            NSNumber *valueForAnswer4a = @(1);
             
-            NSNumber *currentValueForHokkaido = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForHokkaido integerValue];
-            currentValueAsAnInteger += [valueForAnswer4a integerValue];
-            
-            NSNumber *newValueForHokkaido = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForHokkaido forKey:@"Hokkaido"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"] withKey:@"Hokkaido"];
         }
         
         
@@ -746,16 +614,7 @@
             
             // change dictionary value for Bali
             
-            NSNumber *valueForAnswer4b = @(1);
-            
-            NSNumber *currentValueForBali = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForBali integerValue];
-            currentValueAsAnInteger += [valueForAnswer4b integerValue];
-            
-            NSNumber *newValueForBali = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForBali forKey:@"Bali"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"] withKey:@"Bali"];
             
         }
         
@@ -764,16 +623,7 @@
             
             //change dictionary value for Monaco
             
-            NSNumber *valueForAnswer4c = @(1);
-            
-            NSNumber *currentValueForMonaco = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForMonaco integerValue];
-            currentValueAsAnInteger += [valueForAnswer4c integerValue];
-            
-            NSNumber *newValueForMonaco = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForMonaco forKey:@"Monaco"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"] withKey:@"Monaco"];
             
             
         }
@@ -783,16 +633,7 @@
             
             //change dictionary value for Aspen
             
-            NSNumber *valueForAnswer4d = @(1);
-            
-            NSNumber *currentValueForAspen = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForAspen integerValue];
-            currentValueAsAnInteger += [valueForAnswer4d integerValue];
-            
-            NSNumber *newValueForAspen = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForAspen forKey:@"Aspen"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"] withKey:@"Aspen"];
             
             
         }
@@ -802,16 +643,7 @@
             
             // change dictionary value for Fox Glacier
             
-            NSNumber *valueForAnswer4e = @(1);
-            
-            NSNumber *currentValueForFoxGlacier = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"];
-            
-            NSInteger currentFoxGlacierValueAsAnInteger = [currentValueForFoxGlacier integerValue];
-            currentFoxGlacierValueAsAnInteger += [valueForAnswer4e integerValue];
-            
-            NSNumber *newValueForFoxGlacier = @(currentFoxGlacierValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForFoxGlacier forKey:@"Fox Glacier"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"] withKey:@"Fox Glacier"];
             
         }
         
@@ -819,16 +651,7 @@
             
             // change dictionary value for Hokkaido
             
-            NSNumber *valueForAnswer5a = @(1);
-            
-            NSNumber *currentValueForHokkaido = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForHokkaido integerValue];
-            currentValueAsAnInteger += [valueForAnswer5a integerValue];
-            
-            NSNumber *newValueForHokkaido = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForHokkaido forKey:@"Hokkaido"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"] withKey:@"Hokkaido"];
         }
         
         
@@ -837,16 +660,7 @@
             
             // change dictionary value for Bali
             
-            NSNumber *valueForAnswer5b = @(1);
-            
-            NSNumber *currentValueForBali = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForBali integerValue];
-            currentValueAsAnInteger += [valueForAnswer5b integerValue];
-            
-            NSNumber *newValueForBali = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForBali forKey:@"Bali"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"] withKey:@"Bali"];
             
         }
         
@@ -855,16 +669,7 @@
             
             //change dictionary value for Aspen
             
-            NSNumber *valueForAnswer5c = @(1);
-            
-            NSNumber *currentValueForAspen = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForAspen integerValue];
-            currentValueAsAnInteger += [valueForAnswer5c integerValue];
-            
-            NSNumber *newValueForAspen = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForAspen forKey:@"Aspen"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"] withKey:@"Aspen"];
             
             
         }
@@ -874,16 +679,7 @@
             
             //change dictionary value for Monaco
             
-            NSNumber *valueForAnswer5d = @(1);
-            
-            NSNumber *currentValueForMonaco = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"];
-            
-            NSInteger currentValueAsAnInteger = [currentValueForMonaco integerValue];
-            currentValueAsAnInteger += [valueForAnswer5d integerValue];
-            
-            NSNumber *newValueForMonaco = @(currentValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForMonaco forKey:@"Monaco"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"] withKey:@"Monaco"];
             
             
         }
@@ -892,16 +688,8 @@
         if (selectedButtonAtCurrentIndex == self.answer5e) {
             
             // change dictionary value for Fox Glacier
-            NSNumber *valueForAnswer5e = @(1);
             
-            NSNumber *currentValueForFoxGlacier = [[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"];
-            
-            NSInteger currentFoxGlacierValueAsAnInteger = [currentValueForFoxGlacier integerValue];
-            currentFoxGlacierValueAsAnInteger += [valueForAnswer5e integerValue];
-            
-            NSNumber *newValueForFoxGlacier = @(currentFoxGlacierValueAsAnInteger);
-            
-            [[DestinationsModel sharedModel].destinationValues setValue:newValueForFoxGlacier forKey:@"Fox Glacier"];
+            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"] withKey:@"Fox Glacier"];
             
         }
     }
