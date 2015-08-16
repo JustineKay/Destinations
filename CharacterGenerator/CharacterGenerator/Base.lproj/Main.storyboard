@@ -116,7 +116,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer1c:" destination="dSf-yI-ttM" eventType="touchUpInside" id="Hjz-oe-gUg"/>
+                                                        <action selector="selectedAnswerOne:" destination="dSf-yI-ttM" eventType="touchUpInside" id="xTL-Wc-Ovq"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" horizontalCompressionResistancePriority="751" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-uE-2rj" userLabel="D">
@@ -127,7 +127,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer1d:" destination="dSf-yI-ttM" eventType="touchUpInside" id="Esz-fV-sA1"/>
+                                                        <action selector="selectedAnswerOne:" destination="dSf-yI-ttM" eventType="touchUpInside" id="8XN-vy-NGG"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01i-dc-FTY" userLabel="B">
@@ -138,7 +138,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer1b:" destination="dSf-yI-ttM" eventType="touchUpInside" id="MCw-90-Idn"/>
+                                                        <action selector="selectedAnswerOne:" destination="dSf-yI-ttM" eventType="touchUpInside" id="6um-b9-jYy"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcE-PX-vUk" userLabel="A">
@@ -149,7 +149,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer1a:" destination="dSf-yI-ttM" eventType="touchUpInside" id="yso-r8-YKu"/>
+                                                        <action selector="selectedAnswerOne:" destination="dSf-yI-ttM" eventType="touchUpInside" id="pQr-s2-dF5"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -203,7 +203,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer2b:" destination="dSf-yI-ttM" eventType="touchUpInside" id="Ipd-jF-djq"/>
+                                                        <action selector="selectedAnswerTwo:" destination="dSf-yI-ttM" eventType="touchUpInside" id="ako-xS-mUG"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Et-Og-fZf" userLabel="A">
@@ -217,7 +217,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer2a:" destination="dSf-yI-ttM" eventType="touchUpInside" id="B0O-wP-2gk"/>
+                                                        <action selector="selectedAnswerTwo:" destination="dSf-yI-ttM" eventType="touchUpInside" id="VIS-BI-WbQ"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -267,7 +267,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer3a:" destination="dSf-yI-ttM" eventType="touchUpInside" id="YoM-7a-iSJ"/>
+                                                        <action selector="selectedAnswerThree:" destination="dSf-yI-ttM" eventType="touchUpInside" id="6XH-L4-YcB"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DZE-aw-yfQ" userLabel="B">
@@ -281,7 +281,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer3b:" destination="dSf-yI-ttM" eventType="touchUpInside" id="2vO-fK-aJc"/>
+                                                        <action selector="selectedAnswerThree:" destination="dSf-yI-ttM" eventType="touchUpInside" id="x66-7j-WOx"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Do you prefer outdoor or indoor activities?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdv-0n-q3s">
@@ -328,7 +328,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer4a:" destination="dSf-yI-ttM" eventType="touchUpInside" id="00e-Sy-I4b"/>
+                                                        <action selector="selectedAnswerFour:" destination="dSf-yI-ttM" eventType="touchUpInside" id="0ND-D9-IdM"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A6s-kj-B1u" userLabel="B">
@@ -339,7 +339,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer4b:" destination="dSf-yI-ttM" eventType="touchUpInside" id="wfZ-Yy-wbz"/>
+                                                        <action selector="selectedAnswerFour:" destination="dSf-yI-ttM" eventType="touchUpInside" id="WB0-Dj-3hk"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJd-61-kZU" userLabel="C">
@@ -350,7 +350,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer4c:" destination="dSf-yI-ttM" eventType="touchUpInside" id="JF7-ET-oAg"/>
+                                                        <action selector="selectedAnswerFour:" destination="dSf-yI-ttM" eventType="touchUpInside" id="djD-HS-VpT"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Igh-dJ-3pQ" userLabel="D">
@@ -361,7 +361,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer4d:" destination="dSf-yI-ttM" eventType="touchUpInside" id="gSi-a3-9em"/>
+                                                        <action selector="selectedAnswerFour:" destination="dSf-yI-ttM" eventType="touchUpInside" id="4WX-yA-hmX"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7tx-53-luE" userLabel="E">
@@ -372,7 +372,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer4e:" destination="dSf-yI-ttM" eventType="touchUpInside" id="l5i-VH-08c"/>
+                                                        <action selector="selectedAnswerFour:" destination="dSf-yI-ttM" eventType="touchUpInside" id="Edd-AF-EZe"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -434,7 +434,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer5a:" destination="dSf-yI-ttM" eventType="touchUpInside" id="qPU-R8-cmb"/>
+                                                        <action selector="selectedAnswerFive:" destination="dSf-yI-ttM" eventType="touchUpInside" id="ucE-KP-ItM"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wre-nQ-HGi" userLabel="B">
@@ -445,7 +445,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer5b:" destination="dSf-yI-ttM" eventType="touchUpInside" id="imK-1Z-k5R"/>
+                                                        <action selector="selectedAnswerFive:" destination="dSf-yI-ttM" eventType="touchUpInside" id="vBZ-IM-fXG"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2x0-q5-IWF" userLabel="C">
@@ -456,7 +456,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer5c:" destination="dSf-yI-ttM" eventType="touchUpInside" id="p2O-cf-5FB"/>
+                                                        <action selector="selectedAnswerFive:" destination="dSf-yI-ttM" eventType="touchUpInside" id="wad-d7-K8u"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8s-db-NAu" userLabel="D">
@@ -467,7 +467,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer5d:" destination="dSf-yI-ttM" eventType="touchUpInside" id="8ea-qu-qhu"/>
+                                                        <action selector="selectedAnswerFive:" destination="dSf-yI-ttM" eventType="touchUpInside" id="Afx-xy-LCp"/>
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gQ-GV-0O8" userLabel="E">
@@ -478,7 +478,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <action selector="selectedAnswer5e:" destination="dSf-yI-ttM" eventType="touchUpInside" id="GOV-Ho-Khu"/>
+                                                        <action selector="selectedAnswerFive:" destination="dSf-yI-ttM" eventType="touchUpInside" id="0Sz-ja-nbG"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -548,24 +548,42 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1400"/>
                     <connections>
-                        <outlet property="answer1a" destination="lcE-PX-vUk" id="2lB-Jf-CnA"/>
-                        <outlet property="answer1b" destination="01i-dc-FTY" id="DHz-Rq-nYg"/>
-                        <outlet property="answer1c" destination="XCZ-Ui-tYy" id="8yd-2t-yDF"/>
-                        <outlet property="answer1d" destination="eEt-uE-2rj" id="qXm-oc-B8F"/>
-                        <outlet property="answer2a" destination="3Et-Og-fZf" id="m2W-kS-oLG"/>
-                        <outlet property="answer2b" destination="pwP-Pl-f4F" id="pUz-S1-WPl"/>
-                        <outlet property="answer3a" destination="sIr-CN-53T" id="5q6-CV-FwD"/>
-                        <outlet property="answer3b" destination="DZE-aw-yfQ" id="flk-yB-xRL"/>
-                        <outlet property="answer4a" destination="xIk-nW-SbO" id="5Ux-Ke-bBR"/>
-                        <outlet property="answer4b" destination="A6s-kj-B1u" id="lC9-at-r8g"/>
-                        <outlet property="answer4c" destination="rJd-61-kZU" id="cUZ-EE-wg8"/>
-                        <outlet property="answer4d" destination="Igh-dJ-3pQ" id="p80-8v-suB"/>
-                        <outlet property="answer4e" destination="7tx-53-luE" id="SXM-mh-Jk1"/>
-                        <outlet property="answer5a" destination="ypP-Li-lA7" id="ewk-io-dIc"/>
-                        <outlet property="answer5b" destination="Wre-nQ-HGi" id="eGe-My-PTb"/>
-                        <outlet property="answer5c" destination="2x0-q5-IWF" id="fvZ-GC-cq2"/>
-                        <outlet property="answer5d" destination="x8s-db-NAu" id="quA-U9-GxR"/>
-                        <outlet property="answer5e" destination="4gQ-GV-0O8" id="rlg-xL-lr2"/>
+                        <outlet property="answer1a" destination="lcE-PX-vUk" id="WzH-zv-oWv"/>
+                        <outlet property="answer1b" destination="01i-dc-FTY" id="Fav-yb-bdF"/>
+                        <outlet property="answer1c" destination="XCZ-Ui-tYy" id="QoI-CY-Lo6"/>
+                        <outlet property="answer1d" destination="eEt-uE-2rj" id="9ZB-4m-l5R"/>
+                        <outlet property="answer2a" destination="3Et-Og-fZf" id="6Eg-RZ-vWs"/>
+                        <outlet property="answer2b" destination="pwP-Pl-f4F" id="tHV-fd-QgV"/>
+                        <outlet property="answer3a" destination="sIr-CN-53T" id="4nG-I9-SJl"/>
+                        <outlet property="answer3b" destination="DZE-aw-yfQ" id="GfC-4g-Oba"/>
+                        <outlet property="answer4a" destination="xIk-nW-SbO" id="5aH-Tj-9aa"/>
+                        <outlet property="answer4b" destination="A6s-kj-B1u" id="yzs-Jr-utj"/>
+                        <outlet property="answer4c" destination="rJd-61-kZU" id="0sx-SL-tny"/>
+                        <outlet property="answer4d" destination="Igh-dJ-3pQ" id="liY-oC-F2Q"/>
+                        <outlet property="answer4e" destination="7tx-53-luE" id="j88-nj-bK9"/>
+                        <outlet property="answer5a" destination="ypP-Li-lA7" id="huU-YT-yHI"/>
+                        <outlet property="answer5b" destination="Wre-nQ-HGi" id="mU4-c7-0ip"/>
+                        <outlet property="answer5c" destination="2x0-q5-IWF" id="lnf-dt-zrH"/>
+                        <outlet property="answer5d" destination="x8s-db-NAu" id="vys-K9-uDn"/>
+                        <outlet property="answer5e" destination="4gQ-GV-0O8" id="OEY-iz-bWR"/>
+                        <outletCollection property="answer1Buttons" destination="lcE-PX-vUk" id="OFd-zE-cF3"/>
+                        <outletCollection property="answer1Buttons" destination="01i-dc-FTY" id="MDA-Kz-iVg"/>
+                        <outletCollection property="answer1Buttons" destination="XCZ-Ui-tYy" id="p8F-Vc-Kki"/>
+                        <outletCollection property="answer1Buttons" destination="eEt-uE-2rj" id="PoN-PH-7Ld"/>
+                        <outletCollection property="answer2Buttons" destination="3Et-Og-fZf" id="27G-WW-Dev"/>
+                        <outletCollection property="answer2Buttons" destination="pwP-Pl-f4F" id="fW7-Xt-7ku"/>
+                        <outletCollection property="answer3Buttons" destination="sIr-CN-53T" id="lQY-oV-AeD"/>
+                        <outletCollection property="answer3Buttons" destination="DZE-aw-yfQ" id="RXl-ya-UIh"/>
+                        <outletCollection property="answer4Buttons" destination="xIk-nW-SbO" id="qlA-Nm-XcG"/>
+                        <outletCollection property="answer4Buttons" destination="A6s-kj-B1u" id="WxW-t7-OaH"/>
+                        <outletCollection property="answer4Buttons" destination="rJd-61-kZU" id="Lnb-xi-DQ1"/>
+                        <outletCollection property="answer4Buttons" destination="Igh-dJ-3pQ" id="MDU-9S-KdG"/>
+                        <outletCollection property="answer4Buttons" destination="7tx-53-luE" id="Kz7-Nb-8DM"/>
+                        <outletCollection property="answer5Buttons" destination="ypP-Li-lA7" id="Xd1-Ic-och"/>
+                        <outletCollection property="answer5Buttons" destination="Wre-nQ-HGi" id="BKE-U3-ZTZ"/>
+                        <outletCollection property="answer5Buttons" destination="2x0-q5-IWF" id="yfR-kq-h22"/>
+                        <outletCollection property="answer5Buttons" destination="x8s-db-NAu" id="9ft-W2-dDV"/>
+                        <outletCollection property="answer5Buttons" destination="4gQ-GV-0O8" id="ell-ZP-4fu"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RWo-X3-70l" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -625,7 +643,7 @@
                     <navigationItem key="navigationItem" id="xW7-tG-0FU">
                         <nil key="title"/>
                         <view key="titleView" contentMode="scaleToFill" id="ddc-5l-uB3">
-                            <rect key="frame" x="180" y="5.5" width="240" height="33"/>
+                            <rect key="frame" x="180" y="6" width="240" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a new destination" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ah-6h-dTj">

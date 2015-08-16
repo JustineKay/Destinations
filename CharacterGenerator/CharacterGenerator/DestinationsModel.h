@@ -24,5 +24,6 @@
 -(void)initializeData;
 
 + (DestinationsModel *)sharedModel;
+- (NSArray *)allDestinations;
 
 @end

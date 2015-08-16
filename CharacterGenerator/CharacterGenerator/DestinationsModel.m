@@ -63,6 +63,15 @@
     
 }
 
+- (NSArray *)allDestinations {
+    return @[
+             self.aspen,
+             self.bali,
+             self.foxGlacier,
+             self.hokkaido,
+             self.monaco];
+}
+
 -(void)initializeData{
     
     

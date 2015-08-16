@@ -11,6 +11,15 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface QuizTableViewController ()
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *answer1Buttons;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *answer2Buttons;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *answer3Buttons;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *answer4Buttons;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *answer5Buttons;
 
 @property (weak, nonatomic) IBOutlet UIButton *answer1a;
 @property (weak, nonatomic) IBOutlet UIButton *answer1b;
@@ -25,7 +34,6 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *answer4a;
 @property (weak, nonatomic) IBOutlet UIButton *answer4b;
-
 @property (weak, nonatomic) IBOutlet UIButton *answer4c;
 @property (weak, nonatomic) IBOutlet UIButton *answer4d;
 @property (weak, nonatomic) IBOutlet UIButton *answer4e;
@@ -35,7 +43,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *answer5c;
 @property (weak, nonatomic) IBOutlet UIButton *answer5d;
 @property (weak, nonatomic) IBOutlet UIButton *answer5e;
-
 
 @property (nonatomic) NSMutableArray *selectedButtons;
 
@@ -60,42 +67,42 @@
                                                           @"Monaco"      : @(0)
                                                           }.mutableCopy;
     
-    self.answer1a.layer.cornerRadius = 10;
-    self.answer1a.clipsToBounds = YES;
-    self.answer1b.layer.cornerRadius = 10;
-    self.answer1b.clipsToBounds = YES;
-    self.answer1c.layer.cornerRadius = 10;
-    self.answer1c.clipsToBounds = YES;
-    self.answer1d.layer.cornerRadius = 10;
-    self.answer1d.clipsToBounds = YES;
-    self.answer2a.layer.cornerRadius = 10;
-    self.answer2a.clipsToBounds = YES;
-    self.answer2b.layer.cornerRadius = 10;
-    self.answer2b.clipsToBounds = YES;
-    self.answer3a.layer.cornerRadius = 10;
-    self.answer3a.clipsToBounds = YES;
-    self.answer3b.layer.cornerRadius = 10;
-    self.answer3b.clipsToBounds = YES;
-    self.answer4a.layer.cornerRadius = 10;
-    self.answer4a.clipsToBounds = YES;
-    self.answer4b.layer.cornerRadius = 10;
-    self.answer4b.clipsToBounds = YES;
-    self.answer4c.layer.cornerRadius = 10;
-    self.answer4c.clipsToBounds = YES;
-    self.answer4d.layer.cornerRadius = 10;
-    self.answer4d.clipsToBounds = YES;
-    self.answer4e.layer.cornerRadius = 10;
-    self.answer4e.clipsToBounds = YES;
-    self.answer5a.layer.cornerRadius = 10;
-    self.answer5a.clipsToBounds = YES;
-    self.answer5b.layer.cornerRadius = 10;
-    self.answer5b.clipsToBounds = YES;
-    self.answer5c.layer.cornerRadius = 10;
-    self.answer5c.clipsToBounds = YES;
-    self.answer5d.layer.cornerRadius = 10;
-    self.answer5d.clipsToBounds = YES;
-    self.answer5e.layer.cornerRadius = 10;
-    self.answer5e.clipsToBounds = YES;
+//    self.answer1Buttons.layer.cornerRadius = 10;
+//    self.answer1Buttons.clipsToBounds = YES;
+//    self.answer1b.layer.cornerRadius = 10;
+//    self.answer1b.clipsToBounds = YES;
+//    self.answer1c.layer.cornerRadius = 10;
+//    self.answer1c.clipsToBounds = YES;
+//    self.answer1d.layer.cornerRadius = 10;
+//    self.answer1d.clipsToBounds = YES;
+//    self.answer2a.layer.cornerRadius = 10;
+//    self.answer2a.clipsToBounds = YES;
+//    self.answer2b.layer.cornerRadius = 10;
+//    self.answer2b.clipsToBounds = YES;
+//    self.answer3a.layer.cornerRadius = 10;
+//    self.answer3a.clipsToBounds = YES;
+//    self.answer3b.layer.cornerRadius = 10;
+//    self.answer3b.clipsToBounds = YES;
+//    self.answer4a.layer.cornerRadius = 10;
+//    self.answer4a.clipsToBounds = YES;
+//    self.answer4b.layer.cornerRadius = 10;
+//    self.answer4b.clipsToBounds = YES;
+//    self.answer4c.layer.cornerRadius = 10;
+//    self.answer4c.clipsToBounds = YES;
+//    self.answer4d.layer.cornerRadius = 10;
+//    self.answer4d.clipsToBounds = YES;
+//    self.answer4e.layer.cornerRadius = 10;
+//    self.answer4e.clipsToBounds = YES;
+//    self.answer5a.layer.cornerRadius = 10;
+//    self.answer5a.clipsToBounds = YES;
+//    self.answer5b.layer.cornerRadius = 10;
+//    self.answer5b.clipsToBounds = YES;
+//    self.answer5c.layer.cornerRadius = 10;
+//    self.answer5c.clipsToBounds = YES;
+//    self.answer5d.layer.cornerRadius = 10;
+//    self.answer5d.clipsToBounds = YES;
+//    self.answer5e.layer.cornerRadius = 10;
+//    self.answer5e.clipsToBounds = YES;
 
     
     
@@ -115,272 +122,78 @@
     
 }
 
-
-- (IBAction)selectedAnswer1a:(UIButton *)sender {
+- (IBAction)selectedAnswerOne:(UIButton *)sender {
+    NSLog(@"%@", sender.titleLabel.text);
     
-    [self.selectedButtons insertObject:self.answer1a atIndex:0];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer1a];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1b];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1c];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1d];
-    
+    for (UIButton *button in self.answer1Buttons) {
+        [self setBackgroundAndTitleColorForDeselectedAnswer:button];
+    }
+    [self setBackgroundAndTitleColorForSelectedAnswer:sender];
+    [self.selectedButtons insertObject:sender atIndex:0];
 }
 
 
-- (IBAction)selectedAnswer1b:(UIButton *)sender {
+- (IBAction)selectedAnswerTwo:(UIButton *)sender {
     
-    
-    [self.selectedButtons insertObject:self.answer1b atIndex:0];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer1b];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1a];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1c];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1d];
-    
-    
+    for (UIButton *button in self.answer2Buttons) {
+        [self setBackgroundAndTitleColorForDeselectedAnswer:button];
+    }
+    [self setBackgroundAndTitleColorForSelectedAnswer:sender];
+    [self.selectedButtons insertObject:sender atIndex:1];
 }
 
 
-- (IBAction)selectedAnswer1c:(UIButton *)sender {
+- (IBAction)selectedAnswerThree:(UIButton *)sender {
     
-    
-    [self.selectedButtons insertObject:self.answer1c atIndex:0];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer1c];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1a];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1b];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1d];
-    
+    for (UIButton *button in self.answer3Buttons) {
+        [self setBackgroundAndTitleColorForDeselectedAnswer:button];
+    }
+    [self setBackgroundAndTitleColorForSelectedAnswer:sender];
+    [self.selectedButtons insertObject:sender atIndex:2];
 }
 
 
+- (IBAction)selectedAnswerFour:(UIButton *)sender {
+    
+    for (UIButton *button in self.answer4Buttons) {
+        [self setBackgroundAndTitleColorForDeselectedAnswer:button];
+    }
+    [self setBackgroundAndTitleColorForSelectedAnswer:sender];
+    [self.selectedButtons insertObject:sender atIndex:3];
+}
 
-- (IBAction)selectedAnswer1d:(UIButton *)sender {
+
+- (IBAction)selectedAnswerFive:(UIButton *)sender {
     
-    [self.selectedButtons insertObject:self.answer1d atIndex:0];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer1d];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1a];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1b];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer1c];
-    
+    for (UIButton *button in self.answer5Buttons) {
+        [self setBackgroundAndTitleColorForDeselectedAnswer:button];
+    }
+    [self setBackgroundAndTitleColorForSelectedAnswer:sender];
+    [self.selectedButtons insertObject:sender atIndex:4];
 }
 
 
 
-
-- (IBAction)selectedAnswer2a:(UIButton *)sender {
+-(void)addValue: (NSNumber *)answerValue toCurrentValue: (NSNumber *)destinationValue forDestination: (Destination *)destination{
     
-    [self.selectedButtons insertObject:self.answer2a atIndex:1];
+    NSNumber *currentDestinationValue = destination.values;
+    NSInteger currentDestinationValueAsInteger = [currentDestinationValue integerValue];
     
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer2a];
+    currentDestinationValueAsInteger += [answerValue integerValue];
     
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer2b];
+    NSNumber *newDestinationValue = @(currentDestinationValueAsInteger);
     
-}
-
-
-
-- (IBAction)selectedAnswer2b:(UIButton *)sender {
+    destination.values = newDestinationValue;
     
-    
-    [self.selectedButtons insertObject:self.answer2b atIndex:1];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer2b];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer2a];
-    
-    
-    
-}
-
-
-- (IBAction)selectedAnswer3a:(UIButton *)sender {
-    
-    [self.selectedButtons insertObject:self.answer3a atIndex:2];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer3a];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer3b];
-    
-}
-
-
-- (IBAction)selectedAnswer3b:(UIButton *)sender {
-    
-    [self.selectedButtons insertObject:self.answer3b atIndex:2];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer3b];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer3a];
-    
-    
-}
-
-
-- (IBAction)selectedAnswer4a:(UIButton *)sender {
-    
-    [self.selectedButtons insertObject:self.answer4a atIndex:3];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer4a];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4b];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4c];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4d];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4e];
-}
-
-
-- (IBAction)selectedAnswer4b:(UIButton *)sender {
-    
-    [self.selectedButtons insertObject:self.answer4b atIndex:3];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer4b];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4a];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4c];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4d];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4e];
-    
-}
-
-
-- (IBAction)selectedAnswer4c:(UIButton *)sender {
-    
-    [self.selectedButtons insertObject:self.answer4c atIndex:3];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer4c];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4a];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4b];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4d];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4e];
-    
-    
-}
-
-
-- (IBAction)selectedAnswer4d:(UIButton *)sender {
-    
-    [self.selectedButtons insertObject:self.answer4d atIndex:3];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer4d];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4a];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4b];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4c];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4e];
-    
-}
-
-
-
-- (IBAction)selectedAnswer4e:(UIButton *)sender {
-    
-    
-    [self.selectedButtons insertObject:self.answer4e atIndex:3];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer4e];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4a];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4b];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4c];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer4d];
-}
-
-
-
-- (IBAction)selectedAnswer5a:(UIButton *)sender {
-    
-    [self.selectedButtons insertObject:self.answer5a atIndex:4];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer5a];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5b];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5c];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5d];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5e];
-    
-    
-    
-}
-
-
-
-- (IBAction)selectedAnswer5b:(UIButton *)sender {
-    
-    [self.selectedButtons insertObject:self.answer5b atIndex:4];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer5b];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5a];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5c];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5d];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5e];
-    
-}
-
-
-
-- (IBAction)selectedAnswer5c:(UIButton *)sender {
-    
-    [self.selectedButtons insertObject:self.answer5c atIndex:4];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer5c];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5a];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5b];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5d];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5e];
-    
-    
-}
-
-
-- (IBAction)selectedAnswer5d:(UIButton *)sender {
-    
-    [self.selectedButtons insertObject:self.answer5d atIndex:4];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer5d];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5a];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5b];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5c];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5e];
-    
-    
-}
-
-
-- (IBAction)selectedAnswer5e:(UIButton *)sender {
-    
-    [self.selectedButtons insertObject:self.answer5e atIndex:4];
-    
-    [self setBackgroundAndTitleColorForSelectedAnswer:self.answer5e];
-    
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5a];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5b];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5c];
-    [self setBackgroundAndTitleColorForDeselectedAnswer:self.answer5d];
-    
-}
-
--(void)addValue: (NSNumber *)answerValue to: (NSNumber *)destinationValue withKey: (NSString *)destinationName{
-    
-    NSNumber *currentDestinationValue = [[DestinationsModel sharedModel].destinationValues objectForKey:destinationName];
-    
-    NSInteger currentDestinationValueAsAnInteger = [currentDestinationValue integerValue];
-    
-    currentDestinationValueAsAnInteger += [answerValue integerValue];
-    
-    NSNumber *newValueForDestination = @(currentDestinationValueAsAnInteger);
-    
-    [[DestinationsModel sharedModel].destinationValues setValue:newValueForDestination forKey:destinationName];
+//    NSNumber *currentDestinationValue = [[DestinationsModel sharedModel].destinationValues objectForKey:destinationName];
+//    
+//    NSInteger currentDestinationValueAsAnInteger = [currentDestinationValue integerValue];
+//    
+//    currentDestinationValueAsAnInteger += [answerValue integerValue];
+//    
+//    NSNumber *newValueForDestination = @(currentDestinationValueAsAnInteger);
+//    
+//    [[DestinationsModel sharedModel].destinationValues setValue:newValueForDestination forKey:destinationName];
     
     
 }
@@ -396,7 +209,7 @@
             
             // change dictionary value for Hokkaido
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"] withKey:@"Hokkaido"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].hokkaido.values forDestination:[DestinationsModel sharedModel].hokkaido];
             
         }
         
@@ -406,12 +219,12 @@
             
             // change dictionary value for Aspen
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"] withKey:@"Aspen"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].aspen.values forDestination:[DestinationsModel sharedModel].aspen];
             
             
             // change dictionary value for Fox Glacier
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"] withKey:@"Fox Glacier"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].foxGlacier.values forDestination:[DestinationsModel sharedModel].foxGlacier];
             
         }
         
@@ -421,7 +234,7 @@
             
             //change dictionary value for Bali
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"] withKey:@"Bali"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].bali.values forDestination:[DestinationsModel sharedModel].bali];
             
         }
         
@@ -431,7 +244,7 @@
             
             //change dictionary value for Monaco
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"] withKey:@"Monaco"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].monaco.values forDestination:[DestinationsModel sharedModel].monaco];
             
         }
         
@@ -441,12 +254,11 @@
             
             // change dictionary value for Aspen
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"] withKey:@"Aspen"];
-            
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].aspen.values forDestination:[DestinationsModel sharedModel].aspen];
             
             // change dictionary value for Monaco
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"] withKey:@"Monaco"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].monaco.values forDestination:[DestinationsModel sharedModel].monaco];
         }
         
         
@@ -455,17 +267,15 @@
             
             // change dictionary value for Hokkaido
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"] withKey:@"Hokkaido"];
-            
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].hokkaido.values forDestination:[DestinationsModel sharedModel].hokkaido];
             
             // change dictionary value for Bali
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"] withKey:@"Bali"];
-            
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].bali.values forDestination:[DestinationsModel sharedModel].bali];
             
             // change dictionary value for Fox Glacier
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"] withKey:@"Fox Glacier"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].foxGlacier.values forDestination:[DestinationsModel sharedModel].foxGlacier];
             
         }
         
@@ -475,22 +285,21 @@
             
             // change dictionary value for Hokkaido
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"] withKey:@"Hokkaido"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].hokkaido.values forDestination:[DestinationsModel sharedModel].hokkaido];
             
             
             // change dictionary value for Bali
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"] withKey:@"Bali"];
-            
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].bali.values forDestination:[DestinationsModel sharedModel].bali];
             
             // change dictionary value for Aspen
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"] withKey:@"Aspen"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].aspen.values forDestination:[DestinationsModel sharedModel].aspen];
             
             
             // change dictionary value for Fox Glacier
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"] withKey:@"Fox Glacier"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].foxGlacier.values forDestination:[DestinationsModel sharedModel].foxGlacier];
             
         }
         
@@ -498,7 +307,7 @@
             
             //change dictionary value for Monaco
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"] withKey:@"Monaco"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].monaco.values forDestination:[DestinationsModel sharedModel].monaco];
             
         }
         
@@ -506,7 +315,7 @@
             
             // change dictionary value for Hokkaido
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"] withKey:@"Hokkaido"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].hokkaido.values forDestination:[DestinationsModel sharedModel].hokkaido];
         }
         
         
@@ -515,7 +324,7 @@
             
             // change dictionary value for Bali
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"] withKey:@"Bali"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].bali.values forDestination:[DestinationsModel sharedModel].bali];
             
         }
         
@@ -524,7 +333,7 @@
             
             //change dictionary value for Monaco
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"] withKey:@"Monaco"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].monaco.values forDestination:[DestinationsModel sharedModel].monaco];
             
             
         }
@@ -534,8 +343,7 @@
             
             //change dictionary value for Aspen
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"] withKey:@"Aspen"];
-            
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].aspen.values forDestination:[DestinationsModel sharedModel].aspen];
             
         }
         
@@ -544,7 +352,7 @@
             
             // change dictionary value for Fox Glacier
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"] withKey:@"Fox Glacier"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].foxGlacier.values forDestination:[DestinationsModel sharedModel].foxGlacier];
             
         }
         
@@ -552,7 +360,8 @@
             
             // change dictionary value for Hokkaido
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Hokkaido"] withKey:@"Hokkaido"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].hokkaido.values forDestination:[DestinationsModel sharedModel].hokkaido];
+            
         }
         
         
@@ -561,7 +370,7 @@
             
             // change dictionary value for Bali
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Bali"] withKey:@"Bali"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].bali.values forDestination:[DestinationsModel sharedModel].bali];
             
         }
         
@@ -570,9 +379,7 @@
             
             //change dictionary value for Aspen
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Aspen"] withKey:@"Aspen"];
-            
-            
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].aspen.values forDestination:[DestinationsModel sharedModel].aspen];
         }
         
         
@@ -580,8 +387,7 @@
             
             //change dictionary value for Monaco
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Monaco"] withKey:@"Monaco"];
-            
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].monaco.values forDestination:[DestinationsModel sharedModel].monaco];
             
         }
         
@@ -590,47 +396,38 @@
             
             // change dictionary value for Fox Glacier
             
-            [self addValue:@(1) to:[[DestinationsModel sharedModel].destinationValues objectForKey:@"Fox Glacier"] withKey:@"Fox Glacier"];
+            [self addValue:@(1) toCurrentValue:[DestinationsModel sharedModel].foxGlacier.values forDestination:[DestinationsModel sharedModel].foxGlacier];
             
         }
     }
     
     
     
-    NSArray *keys = [[DestinationsModel sharedModel].destinationValues allKeys];
-    NSLog(@"%@", keys);
+//    NSArray *keys = [[DestinationsModel sharedModel].destinationValues allKeys];
+//    NSLog(@"%@", keys);
     
     NSNumber *highestValue = 0;
     NSString *userCity;
     
-    for (int i = 0; i < keys.count; i++) {
-        NSString *key = keys[i];
-        if ([[DestinationsModel sharedModel].destinationValues objectForKey:key] > highestValue){
-            highestValue = [[DestinationsModel sharedModel].destinationValues objectForKey:key];
-            userCity = key;
+    for (Destination *destination in [DestinationsModel sharedModel].allDestinations) {
+        if (destination.values > highestValue) {
+            highestValue = destination.values;
+            userCity = destination.name;
         }
     }
+//    
+//    for (int i = 0; i < keys.count; i++) {
+//        NSString *key = keys[i];
+//        if ([[DestinationsModel sharedModel].destinationValues objectForKey:key] > highestValue){
+//            highestValue = [[DestinationsModel sharedModel].destinationValues objectForKey:key];
+//            userCity = key;
+//        }
+//    }
     
     NSLog(@"highestValue:%@, userCity:%@", highestValue, userCity);
     
     [[DestinationsModel sharedModel].userDestinations addObject: userCity];
     NSLog(@"%@", [DestinationsModel sharedModel].userDestinations);
-    
-    
-    NSArray *destinations = @[[DestinationsModel sharedModel].aspen.name,
-                              [DestinationsModel sharedModel].bali.name,
-                              [DestinationsModel sharedModel].hokkaido.name,
-                              [DestinationsModel sharedModel].foxGlacier.name,
-                              [DestinationsModel sharedModel].monaco.name
-                              ];
-    NSArray *values = @[[DestinationsModel sharedModel].aspen.values,
-                              [DestinationsModel sharedModel].bali.values,
-                              [DestinationsModel sharedModel].hokkaido.values,
-                              [DestinationsModel sharedModel].foxGlacier.values,
-                              [DestinationsModel sharedModel].monaco.values
-                              ];
-    
-    NSDictionary *destinationsValues;
     
     
     // Call this when ever you want to refresh the tableView in Class2
