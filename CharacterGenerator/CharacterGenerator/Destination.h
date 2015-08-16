@@ -12,6 +12,6 @@
 
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *details;
-@property (nonatomic) NSString *values;
+@property (nonatomic) NSNumber *values;
 
 @end

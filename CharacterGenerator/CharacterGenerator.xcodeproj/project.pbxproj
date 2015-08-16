@@ -11,7 +11,6 @@
 		6B1E6FB31B6ECDF200010BBA /* IntroListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B1E6FB21B6ECDF200010BBA /* IntroListTableViewController.m */; };
 		6B277A4C1B73BE9D00118854 /* DestinationsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B277A4B1B73BE9D00118854 /* DestinationsModel.m */; };
 		6B277A4F1B73C1C800118854 /* DestinationDetailPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B277A4E1B73C1C800118854 /* DestinationDetailPageViewController.m */; };
-		6B83985B1B80F3150005C594 /* AnswerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B83985A1B80F3150005C594 /* AnswerButton.m */; };
 		6BADC0F71B7FE07B005B16FA /* Destination.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BADC0F61B7FE07B005B16FA /* Destination.m */; };
 		8916FB0A1B765A4D00A68FC7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8916FB091B765A4D00A68FC7 /* QuartzCore.framework */; };
 		8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D7B0FFA1B6E6FC6003F4FB8 /* main.m */; };
@@ -41,8 +40,6 @@
 		6B277A4B1B73BE9D00118854 /* DestinationsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationsModel.m; sourceTree = "<group>"; };
 		6B277A4D1B73C1C800118854 /* DestinationDetailPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationDetailPageViewController.h; sourceTree = "<group>"; };
 		6B277A4E1B73C1C800118854 /* DestinationDetailPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationDetailPageViewController.m; sourceTree = "<group>"; };
-		6B8398591B80F3150005C594 /* AnswerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerButton.h; sourceTree = "<group>"; };
-		6B83985A1B80F3150005C594 /* AnswerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerButton.m; sourceTree = "<group>"; };
 		6BADC0F51B7FE07B005B16FA /* Destination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Destination.h; sourceTree = "<group>"; };
 		6BADC0F61B7FE07B005B16FA /* Destination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Destination.m; sourceTree = "<group>"; };
 		8916FB091B765A4D00A68FC7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -102,8 +99,6 @@
 			children = (
 				8D7B0FFC1B6E6FC6003F4FB8 /* AppDelegate.h */,
 				8D7B0FFD1B6E6FC6003F4FB8 /* AppDelegate.m */,
-				6B8398591B80F3150005C594 /* AnswerButton.h */,
-				6B83985A1B80F3150005C594 /* AnswerButton.m */,
 				6BADC0F51B7FE07B005B16FA /* Destination.h */,
 				6BADC0F61B7FE07B005B16FA /* Destination.m */,
 				6B277A4A1B73BE9D00118854 /* DestinationsModel.h */,
@@ -253,7 +248,6 @@
 				6B277A4F1B73C1C800118854 /* DestinationDetailPageViewController.m in Sources */,
 				6B277A4C1B73BE9D00118854 /* DestinationsModel.m in Sources */,
 				8D7B0FFB1B6E6FC6003F4FB8 /* main.m in Sources */,
-				6B83985B1B80F3150005C594 /* AnswerButton.m in Sources */,
 				6BADC0F71B7FE07B005B16FA /* Destination.m in Sources */,
 				6B1E6FB31B6ECDF200010BBA /* IntroListTableViewController.m in Sources */,
 			);

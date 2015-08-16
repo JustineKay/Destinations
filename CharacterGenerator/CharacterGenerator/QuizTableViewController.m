@@ -596,6 +596,7 @@
     }
     
     
+    
     NSArray *keys = [[DestinationsModel sharedModel].destinationValues allKeys];
     NSLog(@"%@", keys);
     
@@ -614,6 +615,23 @@
     
     [[DestinationsModel sharedModel].userDestinations addObject: userCity];
     NSLog(@"%@", [DestinationsModel sharedModel].userDestinations);
+    
+    
+    NSArray *destinations = @[[DestinationsModel sharedModel].aspen.name,
+                              [DestinationsModel sharedModel].bali.name,
+                              [DestinationsModel sharedModel].hokkaido.name,
+                              [DestinationsModel sharedModel].foxGlacier.name,
+                              [DestinationsModel sharedModel].monaco.name
+                              ];
+    NSArray *values = @[[DestinationsModel sharedModel].aspen.values,
+                              [DestinationsModel sharedModel].bali.values,
+                              [DestinationsModel sharedModel].hokkaido.values,
+                              [DestinationsModel sharedModel].foxGlacier.values,
+                              [DestinationsModel sharedModel].monaco.values
+                              ];
+    
+    NSDictionary *destinationsValues;
+    
     
     // Call this when ever you want to refresh the tableView in Class2
     [[NSNotificationCenter defaultCenter] postNotificationName:@"RefreshTable" object:nil userInfo:nil];
